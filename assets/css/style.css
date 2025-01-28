@@ -19,7 +19,7 @@ header{
 }
 
 header.dark{
-  background-color: #333;
+  background-color: #444;
   color: white;
 }
 
@@ -53,7 +53,7 @@ header .center{
   grid-template-columns: repeat(2, auto);
   justify-content: center;
 }
-header .center .rectangle1.light{
+header .center .rectangle1{
   width: 348px;
   height: 40px;
   border: 1px solid #ccc;
@@ -61,6 +61,11 @@ header .center .rectangle1.light{
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   padding-left: 10px;
+}
+header .center .rectangle1.dark{
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #333;
 }
 
 header .center .rectangle2{
@@ -78,9 +83,9 @@ header .center .rectangle2{
   align-items: center;
 }
 
-header .center .rectangle2 img{
-  width: 24px;
-  height: 24px;
+header .center .rectangle2.dark{
+  border: 1px solid #fff;
+  background-color: #222;
 }
 
 header .center2 button{
@@ -108,16 +113,6 @@ header .right{
   align-items: center;  
 }
 
-header .right img.video{
-  width: 24px;
-  height: 24px;
-}
-
-header .right img.bell{
-  width: 24px;
-  height: 24px;
-}
-
 header .right img.avatar{
   width: 34px;
   height: 34px;
@@ -135,9 +130,14 @@ main{
   grid-template-rows: 1fr;
   margin: auto;
 }
+
 aside{
   width: 218px;
   height: 968px;  
+}
+
+aside.dark{
+  background-color: #333;  
 }
 
 aside .sidebar{
@@ -162,13 +162,21 @@ aside .sidebar{
   font-weight: 700;
   font-size: 14px;
   line-height: 16.41px;
-  color: #000;
+  color: #000;  
+}
+
+.sidebar .menu-item span.dark{
+  color: #fff;
 }
 
 article{
   width: 100%;
   padding: 16px;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5;  
+}
+
+article.dark{
+  background-color: #222 !important;
 }
 
 article .lista{
@@ -197,7 +205,11 @@ article .lista .lista-item .infos{
     "image title"
     ". subtitle"    
     ;
-  column-gap: 11px;
+  column-gap: 11px;  
+}
+
+article .lista .lista-item .infos.dark{
+  color: #f5f5f5;
 }
 
 article .lista .lista-item .infos img{
