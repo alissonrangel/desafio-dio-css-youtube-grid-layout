@@ -5,7 +5,7 @@
 ## Acréscimos
 - Criei um botão para alternar entre modos dark e light;
 - Criei o modo dark via javascript e CSS;
-- Ao clicar no modo dark eu alterei as cores dos ícones para ficarem brancos através de javascript;
+- Ao clicar no modo dark eu alterei as cores dos ícones pelo svg para ficarem brancos através de javascript;
 - Alterei os textos também para ficarem claros no modo dark.
 
 ## Light
